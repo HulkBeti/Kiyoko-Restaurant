@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- HEADER -->
+
+    <!-- DELIVERY -->
+    <div class="box_reservation">
+        <div class="container">
+            <div class="row justify-content-end">
+                <div class="col-md-6">
+                    <form class="form_reservation" id="detail_booking_form" method="post" novalidate="novalidate">
+                        <input type="hidden" name="nonce" value="3229c37516">
+                        <input type="hidden" name="action" value="add_booking">
+                        <div class="ff-medium fs-36 mb-md-5 mb-3">Đặt bàn</div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="">Họ tên:</label>
+                                <input type="text" name="cusname" id="cusname" class="form-control mb-2" placeholder="Aa" required="">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="">Email:</label>
+                                <input type="text" name="cusemail" id="cusemail" class="form-control mb-2" placeholder="Aa" required="">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="">Số điện thoại:</label>
+                                <input type="text" name="cusphone" id="cusphone" class="form-control mb-2" placeholder="084-" required="">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="quantity">Số khách</label>
+                                <input type="text" min="1" max="99" maxlength="2" name="number_people" id="number_people" class="form-control mb-2" placeholder="0" required="">
+                            </div>
+                            <div class="col-md-12">
+                                <label for="">Nhà hàng</label>
+                                <select name="booking_branch" id="booking_branch" class="form-control mb-2" required="">
+                                    <option>--- Chọn thương hiệu</option>
+                                                                        <option value="branch_27">San Fu Lou – Cantonese Kitchen HCM</option>
+                                                                        <option value="branch_7404">San Fu Lou – Cantonese Kitchen Hà Nội</option>
+                                                                        <option value="branch_4845">San Fu Lou Hotpot</option>
+                                                                        <option value="branch_4430">Dì Mai – Vietnamese Kitchen &amp; Bar</option>
+                                                                        <option value="branch_4795">Sản phẩm đóng gói</option>
+                                                                        <option value="branch_3436">CAFEDA</option>
+                                                                </select>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="">Chi nhánh</label>
+                                <select name="booking_res" id="booking_res" class="form-control mb-2" required="">
+                                    <option>--- Vui lòng chọn thương hiệu trước</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="">Ngày tháng</label>
+                                <input type="text" id="booking_date" name="booking_date" class="form-control mb-2" placeholder="dd/mm/yyyy" required="" readonly="">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="">Giờ</label>
+                                <input type="text" id="booking_time" name="booking_time" class="form-control mb-2" placeholder="0:00" required="" readonly="">
+                            </div>
+                            <div class="col-md-12">
+                                <label for="">Yêu cầu khác</label>
+                                <textarea name="booking_note" id="booking_note" class="form-control mb-2" rows="2" placeholder="Aa"></textarea>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="mt-2">
+                                    <input type="checkbox" name="booking_checkbox" id="booking_checkbox" required=""> <label for="booking_checkbox">Tôi muốn xác nhận đặt bàn qua thư điện tử</label>
+                                </div>
+    
+                                <input type="submit" class="btn btn-black mt-3 w-100 btn-booking" value="Đặt bàn">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    
+</body>
+</html>
